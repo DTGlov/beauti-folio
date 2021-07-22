@@ -1,0 +1,19 @@
+@import "../styles/config","../styles/variables";
+
+.main-page{
+    background: $secondary-color;
+    height: 100%;
+    color: $text-color;
+    padding: 1em;
+}
+
+@include media-md{
+    .main-page{
+        padding: 3em;
+    }
+}
+@include media-lg{
+    .main-page{
+        
+    }
+}

@@ -1,0 +1,30 @@
+@import "../../styles/config","../../styles/variables";
+
+.footer{
+    margin-top: 3em;
+    border-top: 1px solid $primary-color;
+    height: 100px;
+    @include flexDirection(column);
+    justify-content: center;
+   align-items: center;
+
+    &-copy{
+        font-size: 0.8rem;
+    }
+}
+.socials{
+    @include flexDirection(row);
+}
+
+.socials p{
+    padding: 0.5em;
+    border: 1px solid $primary-color;
+    margin-top: 1em;
+    margin-right: 1em;
+
+}
+.socials p a{
+    padding: 0.5em;
+    color: $text-color;
+
+}

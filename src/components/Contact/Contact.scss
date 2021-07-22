@@ -1,0 +1,95 @@
+@import '../../styles/config','../../styles/variables';
+
+.contact-section{
+    margin-top: 3em;
+}
+
+.contact-container{
+    @include flexDirection(row);
+    align-items: center;
+    justify-content: center;
+
+    &-text{
+        font-size: 2rem;
+    }
+}
+
+.contact-details{
+    width: 100%;
+    text-align: center;
+
+    &-para{
+        margin-top: 0.5em;
+    }
+    &-para span{
+        color: $primary-color;
+    }
+}
+
+.form{
+    margin-top: 1em;
+    // background: $primary-color;
+    border: 1px solid $primary-color;
+    padding: 1em;
+    border-radius: 0.5em;
+}
+.form input{
+    width: 100%;
+    height: 40px;
+    border-radius: 0.2em;
+    border: none;
+    color: $secondary-color;
+    background: $text-color;
+}
+.form textarea{
+    width: 100%;
+    margin-top: 0.5em;
+    border-radius: 0.2em;
+    border: none;
+    color: $secondary-color;
+    background: $text-color;
+}
+.con-button{
+    @include flexDirection(row);
+    justify-content: center;
+
+    &-content{
+    margin-top: 0.5em;
+    padding:0.2em 1em;
+    background: $text-color;
+    width: 50%;
+    text-align: center;
+    border-radius: 0.2em;
+    color: $secondary-color;
+    cursor: pointer;
+}
+    &-content-invalid{
+    margin-top: 0.5em;
+    padding:0.2em 1em;
+    background: $text-color;
+    color: $secondary-color;
+    width: 50%;
+    opacity: 0.5;
+    text-align: center;
+    border-radius: 0.2em;
+    cursor: not-allowed;
+}
+}
+
+@include media-lg{
+    .contact-section{
+        padding: 2em 3em;
+    }
+    .contact-details-para{
+        width: 50%;
+        margin: 1em auto;
+    }
+    .form-container{
+        @include flexDirection(column);
+        justify-content: center;
+    }
+    .form{
+        width: 50%;
+        margin: 2em auto;
+    }
+}

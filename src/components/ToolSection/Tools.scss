@@ -1,0 +1,86 @@
+@import "../../styles/config","../../styles/variables";
+
+.tools-section{
+    margin-top: 2em;
+}
+
+.tools-heading{
+    text-align: center;
+    margin-top: 2em;
+}
+
+.tools-icon{
+    @include flexDirection(row);
+    flex-wrap: wrap;
+    margin-top: 1em;
+    margin-left: 1.5em;
+
+    &-item{
+        margin-right: 0.5em;
+        @include flexDirection(column);
+        align-items: center;
+        margin-top:0.5em ;
+
+        &-image{
+            width: 50%;
+        }
+
+        &-text{
+            font-size: 0.6em;
+        }
+    }
+    &-item:hover{
+    -webkit-animation: swing 1s ease;
+    animation: swing 1s ease;
+    -webkit-animation-iteration-count: 1;
+    animation-iteration-count: 1;
+    }
+}
+
+@include keyframes(swing) {
+    15% {
+        -webkit-transform: translateY(5px);
+        transform: translateY(5px);
+    }
+    30% {
+        -webkit-transform: translateY(-5px);
+        transform: translateY(-5px);
+    }
+    50% {
+        -webkit-transform: translateY(3px);
+        transform: translateY(3px);
+    }
+    65% {
+        -webkit-transform: translateY(-3px);
+        transform: translateY(-3px);
+    }
+    80% {
+        -webkit-transform: translateY(2px);
+        transform: translateY(2px);
+    }
+    100% {
+        -webkit-transform: translateY(0);
+        transform: translateY(0);
+    }
+}
+
+@include media-md{
+    .tools-modify{
+        width: 100%;
+        @include flexDirection(row);
+        justify-content: center;
+    }
+}
+
+@include media-lg{
+    .tools-section{
+        padding: 0em 4em;
+    }
+    .tools-section-container{
+        @include flexDirection(row);
+    }
+
+    .tools-item{
+        width: 100%;
+    }
+}

@@ -1,0 +1,68 @@
+@import "../../styles/config","../../styles/variables";
+
+.big-nav{
+ position: sticky;
+    top: 0;
+    z-index: 1;
+}
+
+.header{
+    height: 80px;
+    padding: 1em;
+    background: $secondary-color;
+    @include flexDirection(column);
+    justify-content: center;
+    border-bottom: 1px solid $primary-color;
+   
+}
+.nav{
+    @include flexDirection(row);
+    justify-content: space-between;
+    align-items: center;
+
+    &-lg{
+        display: none;
+    }
+
+    &-logo p{
+        font-weight:600;
+        font-style: italic;
+        color: $primary-color;
+    }
+    &-bar{
+        color: $primary-color;
+    }
+}
+
+@include media-md{
+    .header{
+        padding: 3em;
+    }
+}
+
+@include media-lg{
+    .header{
+        height: 60px;
+        padding:2em 5em;
+    }
+    .nav-logo p{
+        font-size: 1.5rem;
+    }
+    .nav-mobile{
+        display: none;
+    }
+    .nav-lg{
+        display: inline-block;
+    }
+    .nav-lg a{
+        text-decoration: none;
+        margin-right:0.8em;
+        color: #fff;
+        transition: 1s all ease-in;
+    }
+    .nav-lg a:hover{
+        // text-decoration: none;
+        // margin-right:0.8em;
+        color: $primary-color;
+    }
+}

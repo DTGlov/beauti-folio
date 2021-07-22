@@ -1,0 +1,103 @@
+@import '../../../styles/config','../../../styles/variables';
+
+.proj-section{
+    margin-top: 2em;
+    // background: $primary-color;
+}
+
+.proj-container{
+    @include flexDirection(column);
+    text-align: center
+}
+.proj-heading{
+    @include flexDirection(row);
+    align-items: center;
+    justify-content: center;
+
+    &-title{
+        font-size: 1.5rem;
+        margin-right: 0.2em;
+    }
+    &-icon{
+        width: 10%;
+    }
+}
+
+.proj-details{
+    margin-top: 0.5em;
+    font-size: 0.9rem;
+}
+
+.proj-tools{
+    @include flexDirection(row);
+    flex-wrap: wrap;
+    margin-left: 1em;
+
+    &-item{
+        background: $tools-bg;
+        font-size: 0.7rem;
+        margin-top: 0.5em;
+        margin-right: 0.4em;
+        border-radius: 2em;
+        color: $primary-color;
+        padding: 0.5em;
+        cursor: pointer;
+    }
+}
+
+.project-link{
+    margin-top: 0.5em;
+}
+.project-link a{
+    color: $text-color;
+}
+.project-link a span{
+    margin-right: 0.2em;
+}
+
+.proj-img-container{
+    width: 100%;
+    margin-top: 1em;
+    text-align: center;
+
+    &-img{
+        width: 90%;
+    }
+
+}
+
+@include media-md{
+    .proj-section{
+        margin-top: 3em;
+    }
+    .proj-heading-icon{
+        width: 5%;
+    }
+}
+
+@include media-lg{
+    .proj-section{
+        padding: 0em 4em;
+    }
+    .proj-container{
+        @include flexDirection(row);
+    }
+    .proj-details{
+        text-align: left;
+        line-height: 2em;
+        
+    }
+    .proj-heading-title{
+        font-size: 2.5rem;
+    }
+    .proj-heading-icon{
+        width: 8%;
+    }
+    .proj-trick{
+        width: 90%;
+        margin-right: 3em;
+    }
+    .proj-img-container-img{
+        width: 100%;
+    }
+}

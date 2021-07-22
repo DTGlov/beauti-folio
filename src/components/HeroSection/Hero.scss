@@ -1,0 +1,109 @@
+@import "../../styles/config","../../styles/variables";
+
+.hero-section{
+    margin-top: 2em;
+}
+.hero-container{
+    @include flexDirection(column);
+    justify-content: center;
+
+    &-text{
+        text-align: center;
+
+        &-first span{
+            font-size: 1.5rem;
+        }
+        &-second{
+            margin-top: 0.5em;
+        }
+    }
+    &-image{
+        width: 100%;
+        text-align: center;
+
+        &-avatar{
+            width: 80%
+        }
+    }
+    .button{
+        @include flexDirection(row);
+        justify-content: center;
+
+
+        &-content{
+        padding: 0.5em 1em;
+        border: 1px solid $primary-color;
+        margin-top: 1.5em;
+        width: 50%;
+        border-radius: 0.2em;
+        background: $secondary-color;
+        cursor: pointer;
+    }
+        &-content a{
+        text-decoration: none;
+        color: $text-color;
+    }
+    }
+
+}
+
+@include media-md{
+    .hero-section{
+        margin-top: 4em;
+    }
+    .hero-container-text-first{
+        font-size: 2rem;
+    }
+    .hero-container-text-first span{
+        font-size: 2rem;
+    }
+   
+    .hero-container-text-second{
+        margin-top: 1.5em;
+        font-size: 1.2rem;
+    }
+
+    .button{
+        margin-top: 2em;
+    }
+    .hero-container-image-avatar{
+        width: 60%;
+    }
+}
+
+@include media-lg{
+    .hero-section{
+        // margin-top: 0;
+        padding: 0 5em;
+    }
+    .hero-container{
+        @include flexDirection(row);
+        align-items: center;
+    }
+    .hero-container-text{
+        // text-align: left;
+        @include flexDirection(column);
+        justify-content: flex-start;
+
+        &-first{
+            text-align: left;
+        }
+
+        &-second{
+            text-align: left;
+            margin-top: 1em;
+            width: 80%;
+            line-height: 1.5em;
+            font-size: 1.5rem;
+        }
+    }
+    .button-content{
+        width: 10%;
+        display: block;
+        margin-left: -20em;
+
+    }
+    .hero-container-image-avatar{
+        width: 90%;
+    }
+}
