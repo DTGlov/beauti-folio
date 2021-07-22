@@ -47,7 +47,7 @@ function Contact() {
           </p>
         </div>
         <div className="form-container">
-        <form data-aos="fade-left" action="" className="form">
+        <form data-aos="fade-up" action="" className="form">
           <input
             value={form.name}
             onChange={(e) => setForm({ ...form, name: e.target.value })}
