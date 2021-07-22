@@ -30,6 +30,7 @@ function Contact() {
       })
       if (isInvalid) {
         alert("Fill in all spaces 😬")
+        return
       } else {
          alert("Message Sent 🚀🤗");
          clearForm();

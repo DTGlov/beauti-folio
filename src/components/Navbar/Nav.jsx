@@ -19,7 +19,7 @@ function Nav() {
               <a href="#Contact">Contact Me</a>
             </div>
             <div className="nav-mobile" onClick={() => sethideNav(!hideNav)}>
-              <FontAwesomeIcon icon={faBars} className="nav-bar" />
+              <FontAwesomeIcon icon={faBars} className="nav-bar fa-lg" />
             </div>
           </nav>
             </header>
