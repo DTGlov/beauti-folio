@@ -40,7 +40,6 @@ export const secondProject = {
     "firebase-firestore",
     "tailwind",
     "protected-routes",
-    "bcrypt-js",
     "netlify",
     "context-api",
   ],
