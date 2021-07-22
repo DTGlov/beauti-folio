@@ -28,8 +28,13 @@ function Contact() {
         messages: form,
         dateSent:date.toLocaleString()
       })
-      alert("Message Sent")
-      clearForm();
+      if (isInvalid) {
+        alert("Fill in all spaces 😬")
+      } else {
+         alert("Message Sent 🚀🤗");
+         clearForm();
+      }
+     
     } catch (error) {
       alert(error.message)
     }
