@@ -48,7 +48,7 @@ function Contact() {
         </div>
         <div className="contact-details">
           <p className="contact-details-para">
-            I am actively searching for a <span>junior developer job</span> and
+            I am actively searching for a <span> developer job</span> and
             I'm also open to working on exciting projects. Just hit me up.
           </p>
         </div>
