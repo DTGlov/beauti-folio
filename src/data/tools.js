@@ -17,6 +17,7 @@ import github from '../assets/github.svg';
 import bootstrap from '../assets/bootstrap.svg';
 import firebase from '../assets/firebase.svg';
 import redux from '../assets/redux.svg';
+import git from '../assets/git.svg';
 
 import typescript from '../assets/typescript.svg';
 import php from '../assets/php.svg';
@@ -35,6 +36,7 @@ export const toolsUse = [
     {id:77,tech:nextjs,name:"Next JS"},
     {id:8,tech:heroku,name:"Heroku"},
     {id:88,tech:redux,name:"Redux"},
+    {id:871,tech:git,name:"Git"},
     {id:9,tech:netlify,name:"Netlify"},
     {id:10,tech:sass,name:"SCSS"},
     {id:11,tech:tailwindcss,name:"Tailwind CSS"},
