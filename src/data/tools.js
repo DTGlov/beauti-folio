@@ -19,7 +19,7 @@ import firebase from '../assets/firebase.svg';
 import redux from '../assets/redux.svg';
 
 import typescript from '../assets/typescript.svg';
-import wordpress from '../assets/wordpress.svg';
+import php from '../assets/php.svg';
 import python from '../assets/python.svg';
 import figma from '../assets/figma.svg';
 import django from '../assets/django.svg';
@@ -52,6 +52,6 @@ export const toolsLearn = [
     {id:"2",tech:docker,name:"Docker"},
     {id:"3",tech:django,name:"Django"},
     {id:"4",tech:python,name:"Python"},
-    {id:"5",tech:wordpress,name:"WordPress"},
+    {id:"5",tech:php,name:"PHP"},
     {id:"6",tech:figma,name:"Figma"},
 ]
