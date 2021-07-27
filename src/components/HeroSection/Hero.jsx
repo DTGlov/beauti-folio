@@ -25,7 +25,7 @@ function Hero() {
             >
               I'm a Fullstack Javascript Web Developer experienced in
               building cutting-edge and responsive web applications with
-              ReactJs/VueJs/ExpressJs.
+              ReactJs/ExpressJs.
             </motion.p>
             <motion.div variants={fadeInUp} className="button">
               <p className="button-content">
