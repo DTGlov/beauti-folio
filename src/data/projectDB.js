@@ -4,6 +4,8 @@ import Twitter from '../assets/twitterbg.png';
 import twit from '../assets/twitter-icon.svg';
 import disneybg from '../assets/disneynow.png';
 import mickey from '../assets/mickey.svg';
+import suca from "../assets/sucah.png";
+import house from "../assets/house.svg";
 
 export const firstProject = {
   title: "CoffeeShop",
@@ -67,4 +69,24 @@ export const thirdProject = {
   github: "https://github.com/DTGlov/disney-now",
   img: disneybg,
   icon: mickey,
+};
+
+export const HouseProject = {
+  title: "SuCasa",
+  details:
+    "SuCasa is a fullstack real estate marketplace created with React JS, Express JS and MongoDB.This project utilizes GraphQL in querying the API endpoint. The database schema includes Locations and Apartments which exists in a one to one and many to one relationship. Locations and Apartments can be queried, updated and deleted with  queries and mutations defined in the schema.js file. Apollo client is used in the frontend to retrieve the models from MongoDB and rendered on the frontend. This project can be extended to include an admin dashboard where new apartments and locations can be added,updated or deleted since the logic for that has already been implemented on the backend.",
+  tools: [
+    "GraphQL",
+    "expressjs",
+    "reactjs",
+    "fullstack",
+    "tailwind-css",
+    "mongodb",
+    "apollo-client",
+    "mutations",
+  ],
+  projecturl: "https://sucasa.netlify.app/",
+  github:"https://github.com/DTGlov/SuCasa",
+  img:suca,
+  icon:house,
 };
