@@ -23,9 +23,9 @@ function Hero() {
               variants={fadeInUp}
               className="hero-container-text-second"
             >
-              I'm a Fullstack Javascript Web Developer experienced in
+              I'm a Fullstack  Web Developer experienced in
               building cutting-edge and responsive web applications with
-              ReactJs/ExpressJs.
+              ReactJs/ExpressJs/Golang.
             </motion.p>
             <motion.div variants={fadeInUp} className="button">
               <p className="button-content">

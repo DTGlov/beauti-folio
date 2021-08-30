@@ -10,6 +10,7 @@ import netlify from '../assets/netlify.svg';
 import sass from '../assets/sass.svg';
 import tailwindcss from '../assets/tailwindcss.svg';
 import postman from '../assets/postman.svg';
+import postgres from '../assets/postgres.svg';
 // import vuejs from '../assets/vuejs.svg';
 import nextjs from '../assets/nextjs.svg';
 import vscode from '../assets/vscode.svg';
@@ -18,6 +19,7 @@ import bootstrap from '../assets/bootstrap.svg';
 import firebase from '../assets/firebase.svg';
 import redux from '../assets/redux.svg';
 import git from '../assets/git.svg';
+import golang from '../assets/go.svg';
 
 import typescript from '../assets/typescript.svg';
 // import php from '../assets/php.svg';
@@ -27,26 +29,29 @@ import django from '../assets/django.svg';
 import docker from '../assets/docker.svg';
 
 export const toolsUse = [
-    {id:1,tech:html,name:"HTML5"},
-    {id:3,tech:reactjs,name:"React JS"},
-    {id:4,tech:graphql,name:"GraphQL"},
-    {id:5,tech:mongodb,name:"MongoDB"},
-    {id:6,tech:mysql,name:"MySQL"},
-    {id:7,tech:linux,name:"Linux OS"},
-    {id:77,tech:nextjs,name:"Next JS"},
-    {id:8,tech:heroku,name:"Heroku"},
-    {id:88,tech:redux,name:"Redux"},
-    {id:871,tech:git,name:"Git"},
-    {id:9,tech:netlify,name:"Netlify"},
-    {id:10,tech:sass,name:"SCSS"},
-    {id:11,tech:tailwindcss,name:"Tailwind CSS"},
-    {id:21,tech:firebase,name:"Firebase"},
-    {id:12,tech:postman,name:"Postman"},
-    // {id:13,tech:vuejs,name:"Vue JS"},
-    {id:14,tech:vscode,name:"VS Code"},
-    {id:15,tech:expressjs,name:"Express"},
-    {id:16,tech:github,name:"Github"},
-    {id:17,tech:bootstrap,name:"Bootstrap"},
+  { id: 1, tech: html, name: "HTML5" },
+  { id: 3, tech: reactjs, name: "React JS" },
+  { id: 4, tech: graphql, name: "GraphQL" },
+  { id: 5, tech: mongodb, name: "MongoDB" },
+  { id: 6, tech: mysql, name: "MySQL" },
+  { id: 885, tech: golang, name: "Golang" },
+  { id: 805, tech: postgres, name: "Postgres" },
+  { id: 7, tech: linux, name: "Linux OS" },
+  { id: 77, tech: nextjs, name: "Next JS" },
+  { id: 8, tech: heroku, name: "Heroku" },
+  { id: 88, tech: redux, name: "Redux" },
+
+  { id: 871, tech: git, name: "Git" },
+  { id: 9, tech: netlify, name: "Netlify" },
+  { id: 10, tech: sass, name: "SCSS" },
+  { id: 11, tech: tailwindcss, name: "Tailwind CSS" },
+  { id: 21, tech: firebase, name: "Firebase" },
+  { id: 12, tech: postman, name: "Postman" },
+  // {id:13,tech:vuejs,name:"Vue JS"},
+  { id: 14, tech: vscode, name: "VS Code" },
+  { id: 15, tech: expressjs, name: "Express" },
+  { id: 16, tech: github, name: "Github" },
+  { id: 17, tech: bootstrap, name: "Bootstrap" },
 ];
 
 export const toolsLearn = [

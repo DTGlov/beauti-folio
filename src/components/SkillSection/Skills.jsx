@@ -57,7 +57,7 @@ function Skills() {
                   Backend Web Development
                 </h1>
                 <p className="skill-details-para">
-                  As a backend developer I strive to build,test, and deploy maintainable and secure API's. My goto technologies for  building scalable backend applications include but not limited to <span>ExpressJs/MongoDB</span> and authentication services like
+                  As a backend developer I strive to build,test, and deploy maintainable and secure API's. My goto technologies for  building scalable backend applications include but not limited to <span>ExpressJs/Golang</span> and authentication services like
                   <span> FireBase and Google Oauth.</span>
                 </p>
               </div>
