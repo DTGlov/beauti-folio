@@ -36,7 +36,7 @@ function Skills() {
                 The hallmark of every brilliant frontend engineer is the ability
                 to convert web designs and wireframes into responsive web
                 applications whilst following best practices. I combine{' '}
-                <span>React Js</span> with UI libraries and frameworks like
+                <span>React/Vue Js</span> with UI libraries and frameworks like
                 <span> SCSS and Tailwind CSS </span> to bring UI designs to
                 life.
               </p>

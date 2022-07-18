@@ -10,6 +10,9 @@
   &-text {
     text-align: center;
     width: 100%;
+    &-first {
+      font-size: 1.5rem;
+    }
 
     &-first span {
       font-size: 1.5rem;
@@ -38,6 +41,7 @@
       border-radius: 0.2em;
       background: $secondary-color;
       cursor: pointer;
+      transition: all 1s ease;
     }
     &-content a {
       text-decoration: none;

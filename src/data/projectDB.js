@@ -40,15 +40,15 @@ export const instrailProject = {
   title: 'Instrail',
   details:
     'Instrail is an insurance management system and SaaS tool that optimizes the existing business processes.It tracks details of insurance policy, improves agent productivity and provides instant access to client data. It offers comprehensive management solutions to help businesses facilitate insurance operations.',
-  tools: ['vue3', 'Expressjs', 'vuex', 'paystack'],
+  tools: ['vue3', 'Expressjs', 'vuex', 'paystack', 'SaaS'],
   projecturl: 'https://instrail.enyata.com/',
   img: instrail,
 };
 
 export const portalProject = {
-  title: 'Intern Recruitment Management System',
+  title: 'Recruitment Management System',
   details:
-    'Fullstack recruitment management system. This is a SaaS tool that facilitates the recruitment of new iterns to Enyata. This project was built as a final project after a 4-month intensive Fullstack training program with Enyata Ghana.',
+    'Recruitment management system. This is a SaaS tool that facilitates the recruitment of new iterns to Enyata. This project was built as a final project after a 4-month intensive Fullstack training program with Enyata Ghana.',
   tools: ['vue3', 'expressjs', 'mongodb', 'cloudinary', 'multer'],
   github: 'https://github.com/DTGlov/enyataportal',
   img: rps,

@@ -27,6 +27,8 @@ import typescript from '../assets/typescript.svg';
 import websocket from '../assets/websocket.svg';
 import nestjs from '../assets/nestjs.svg';
 import nuxt from '../assets/nuxt.svg';
+import kotlin from '../assets/kotlin.svg';
+import android from '../assets/android.svg';
 // import php from '../assets/php.svg';
 // import python from '../assets/python.svg';
 // import figma from '../assets/figma.svg';
@@ -66,6 +68,8 @@ export const toolsLearn = [
   { id: '121aa', tech: websocket, name: 'WebSocket' },
   { id: '1yu', tech: nestjs, name: 'Nest JS' },
   { id: '1yuv', tech: nuxt, name: 'Nuxt JS' },
+  { id: '1weqwuv', tech: kotlin, name: 'Kotlin' },
+  { id: '1aayuv', tech: android, name: 'Android' },
   // { id: '2', tech: docker, name: 'Docker' },
   // { id: '3', tech: django, name: 'Django' },
   // { id: '4', tech: python, name: 'Python' },
