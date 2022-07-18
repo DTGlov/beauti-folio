@@ -29,7 +29,7 @@ export default function Sidebar({ toggleNav, setToggleNav }) {
           </a>
         </li>
         <li className="sidebar__links-item">
-          <a href="#contact">
+          <a href="#Contact">
             <span>02</span> <span>Contact</span>
           </a>
         </li>
