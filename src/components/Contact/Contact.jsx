@@ -1,4 +1,4 @@
-import React,{useState,useContext} from 'react';
+import React, { useState, useContext } from 'react';
 import './Contact.scss';
 import wave from '../../assets/waving_hand.gif';
 import FirebaseContext from '../../context/firebase';
@@ -6,53 +6,52 @@ import FirebaseContext from '../../context/firebase';
 function Contact() {
   const [form, setForm] = useState({
     name: '',
-    message:''
+    message: '',
   });
 
   const date = new Date();
 
-  const isInvalid = form.post === "" || form.message===""
+  const isInvalid = form.name === '' || form.message === '';
   const { firebase } = useContext(FirebaseContext);
 
   const clearForm = () => {
     setForm({
-      name: "",
-      message:""
-  })
-}
+      name: '',
+      message: '',
+    });
+  };
 
-  const handleSubmit = async(e) => {
+  const handleSubmit = async (e) => {
     e.preventDefault();
     try {
-      await firebase.firestore().collection("messages").add({
+      await firebase.firestore().collection('messages').add({
         messages: form,
-        dateSent:date.toLocaleString()
-      })
+        dateSent: date.toLocaleString(),
+      });
       if (isInvalid) {
-        alert("Fill in all spaces 😬")
-        return
+        alert('Fill in all spaces 😬');
+        return;
       } else {
-         alert("Message Sent 🚀🤗");
-         clearForm();
+        alert('Message Sent 🚀🤗');
+        clearForm();
       }
-     
     } catch (error) {
-      alert(error.message)
+      alert(error.message);
     }
-  }
-    return (
-      <div className="contact-section" id="Contact">
-        <div className="contact-container">
-          <h1 className="contact-container-text">Say Hello </h1>
-          <img src={wave} alt="" className="contact-container-gif" />
-        </div>
-        <div className="contact-details">
-          <p className="contact-details-para">
-            I am actively searching for a <span> web developer job</span> and
-            I'm also open to working on exciting projects. Just hit me up.
-          </p>
-        </div>
-        <div className="form-container">
+  };
+  return (
+    <div className="contact-section" id="Contact">
+      <div className="contact-container">
+        <h1 className="contact-container-text">Say Hello </h1>
+        <img src={wave} alt="" className="contact-container-gif" />
+      </div>
+      <div className="contact-details">
+        <p className="contact-details-para">
+          I am always exploring <span>new opportunities </span> and I'm also
+          open to working on exciting projects. Just hit me up.
+        </p>
+      </div>
+      <div className="form-container">
         <form data-aos="fade-up" action="" className="form">
           <input
             value={form.name}
@@ -69,15 +68,21 @@ function Contact() {
             cols="30"
             rows="10"
           ></textarea>
-          <div className= "con-button">
-            <p className={isInvalid?"con-button-content-invalid":"con-button-content"} onClick={handleSubmit}>
+          <div className="con-button">
+            <button
+              disabled={isInvalid}
+              className={
+                isInvalid ? 'con-button-content-invalid' : 'con-button-content'
+              }
+              onClick={handleSubmit}
+            >
               Send
-            </p>
+            </button>
           </div>
         </form>
       </div>
-      </div>
-    );
+    </div>
+  );
 }
 
-export default Contact
+export default Contact;
